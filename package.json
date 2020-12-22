@@ -1,0 +1,29 @@
+{
+  "name": "ElectronApp",
+  "version": "1.0.0",
+  "main": "main.js",
+  "repository": "https://github.com/felipeisraelsantos/appElectron.git",
+  "author": "felipe_dev2 <desenvolvedor2@contabexpress.com.br>",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^11.1.1",
+    "electron-builder": "^22.9.1"
+  },
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "dist:linux": "electron-builder --linux",
+    "dist:windows": "electron-builder --windows"
+  },
+  "build":{
+    "linux": {
+    "maintainer":"felipe",
+    "executableName":"ElectronApp",
+    "category": "Utility",
+      "target": [
+        "deb"
+      ]
+    }
+  }
+}
